@@ -1,0 +1,42 @@
+/** Descriptive image alts — Google rejects empty or keyword-only alts. */
+export const DESCRIPTIVE_IMAGE_ALTS = {
+	hero: 'Combat Master Hacks hero — ESP and aimbot overlay in Combat Master',
+	espWallhack: 'Wallhack outlines showing enemy players through walls',
+	aimbotCombat: 'Soft aim assist overlay during an Combat Master match',
+	squadFight: 'Combat Master Hacks combat overlay during a squad fight',
+	playerEsp: 'Player ESP boxes and distance readouts in a Combat Master match',
+	headerArt: 'Aimbot view and bone priority controls for Combat Master',
+	cheatsPackage: '2D radar threat overlay for Combat Master',
+	rebootFight: 'Aimbot assist during a Combat Master firefight',
+	battleRoyale: 'Combat Master Hacks in-match overview for Windows PC',
+	battleRoyaleIsland: 'ESP markers for loot and extracts in Combat Master',
+};
+
+/** Page-level image alt by pageId (EN source of truth). */
+export const PAGE_IMAGE_ALTS = {
+	home: 'Combat Master Hacks homepage hero — ESP and aimbot for Combat Master',
+	'combat-master-esp': 'Combat Master ESP player boxes and distance readouts in a match',
+	'combat-master-aimbot': 'Combat Master aimbot and soft aim controls on Windows PC',
+	features: 'Combat Master Hacks features — ESP, soft aim, and radar screenshots',
+	pricing: 'Combat Master Hacks store plans for monthly and lifetime licenses',
+	setup: 'Combat Master Hacks setup guide screenshot for Windows PC',
+	updates: 'Combat Master Hacks live status after anti-cheat and game patches',
+	faq: 'Combat Master Hacks FAQ — delivery, setup, and update answers',
+	support: 'Combat Master Hacks support page for license and setup help',
+	undetected: 'Combat Master Hacks undetected status overview for Windows PC',
+	wallhack: 'Combat Master wallhack visibility through walls in a match',
+	radar: 'Combat Master 2D radar overlay showing nearby threats',
+	anti-cheat: 'Combat Master Hacks maintenance after a Anti-cheat patch',
+	'cheats-2026': 'Combat Master Hacks product overview for Combat Master',
+	hacks: 'Combat Master Hacks product page — ESP, aimbot, and radar',
+	'cheat-download': 'Combat Master Hacks download and install delivery flow',
+	'mod-menu': 'Combat Master Hacks in-game menu controls',
+	'soft-aim': 'Combat Master soft aim FOV and smoothness settings',
+	'best-cheats': 'Combat Master Hacks overview for Combat Master on PC',
+	'aimbot-hack': 'Combat Master aimbot hack controls and bone priority',
+	'esp-hack': 'Combat Master ESP hack boxes and loot markers',
+	'unlock-all': 'Combat Master Hacks license features overview',
+	privacy: 'Combat Master Hacks privacy policy page',
+	refund: 'Combat Master Hacks refund policy page',
+	terms: 'Combat Master Hacks terms of use page',
+};
