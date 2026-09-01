@@ -114,14 +114,16 @@ const links = [
 		right: 0;
 		left: auto;
 		top: calc(100% + 0.45rem);
-		min-width: 15rem;
-		max-height: min(70vh, 22rem);
+		width: min(13.5rem, calc(100vw - 2rem));
+		min-width: 11rem;
+		max-height: min(60vh, 18rem);
 		overflow: auto;
+		padding: 0.45rem;
 		background: var(--bg-elevated);
 		border: 1px solid var(--line);
 		border-radius: var(--radius-md);
-		box-shadow: 0 20px 48px rgba(0, 0, 0, 0.5);
-		z-index: 120;
+		box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+		z-index: 130;
 	}
 
 	.site-header .lang-switcher__link {
@@ -196,14 +198,14 @@ const links = [
 
 	.lang-switcher__badge {
 		flex-shrink: 0;
-		padding: 0.15rem 0.45rem;
+		padding: 0.12rem 0.4rem;
 		border-radius: 999px;
-		background: color-mix(in srgb, var(--magenta) 18%, transparent);
-		color: var(--magenta);
-		font-size: 0.62rem;
-		font-weight: 700;
-		letter-spacing: 0.04em;
-		text-transform: uppercase;
+		background: color-mix(in srgb, var(--magenta) 14%, transparent);
+		color: var(--magenta-soft);
+		font-size: 0.6rem;
+		font-weight: 600;
+		letter-spacing: 0.02em;
+		text-transform: none;
 		white-space: nowrap;
 	}
 
@@ -320,6 +322,11 @@ const links = [
 		gap: 0.45rem;
 		margin-left: auto;
 		min-width: 0;
+	}
+
+	.site-tools__lang {
+		position: relative;
+		z-index: 130;
 	}
 
 	.site-tools__buy {

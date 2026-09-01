@@ -36,9 +36,9 @@ export default function LanguageSwitcher({ currentLocale, locales, hrefForLocale
 				<span>{currentMeta.nativeName}</span>
 			</summary>
 			<div className="lang-switcher__panel">
-				<p className="lang-switcher__note">
-					{currentLocale === 'en' ? t('common.englishOfficial') : t('common.englishIsOfficial')}
-				</p>
+				{currentLocale !== 'en' ? (
+					<p className="lang-switcher__note">{t('common.englishIsOfficial')}</p>
+				) : null}
 				<ul className="lang-switcher__list">
 					{locales.map((locale) => {
 						const href = hrefForLocale[locale.code] ?? `/${locale.code}/`;
@@ -58,7 +58,7 @@ export default function LanguageSwitcher({ currentLocale, locales, hrefForLocale
 								>
 									<span className="lang-switcher__native">{locale.nativeName}</span>
 									{locale.code === 'en' ? (
-										<span className="lang-switcher__badge">{t('common.englishOfficial')}</span>
+										<span className="lang-switcher__badge">Official</span>
 									) : null}
 								</a>
 							</li>
