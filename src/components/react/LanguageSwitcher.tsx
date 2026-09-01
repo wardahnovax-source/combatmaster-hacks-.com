@@ -57,7 +57,9 @@ export default function LanguageSwitcher({ currentLocale, locales, hrefForLocale
 									}}
 								>
 									<span className="lang-switcher__native">{locale.nativeName}</span>
-									<span className="lang-switcher__region">{locale.region}</span>
+									{locale.code === 'en' ? (
+										<span className="lang-switcher__badge">{t('common.englishOfficial')}</span>
+									) : null}
 								</a>
 							</li>
 						);

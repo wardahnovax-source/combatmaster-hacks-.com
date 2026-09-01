@@ -38,7 +38,7 @@ function HomeSeoInner({ faqs }: Props) {
 			links: [
 				{ href: '/pricing/', labelKey: 'homeSeo.linkPlans' },
 				{ href: '/reviews/', labelKey: 'homeSeo.linkReviews' },
-				{ href: '/combat-master-hacks/', labelKey: 'homeSeo.linkCombat MasterCheats' },
+				{ href: '/combat-master-hacks/', labelKey: 'homeSeo.linkTarkovCheats' },
 				{ href: '/features/', labelKey: 'homeSeo.linkAllFeatures' },
 			],
 		},

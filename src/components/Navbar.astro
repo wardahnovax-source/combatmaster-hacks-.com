@@ -151,6 +151,66 @@ const links = [
 		box-shadow: none;
 	}
 
+	.lang-switcher {
+		position: relative;
+	}
+
+	.lang-switcher__panel {
+		padding: 0.5rem;
+	}
+
+	.lang-switcher__note {
+		margin: 0 0 0.5rem;
+		padding: 0.45rem 0.55rem;
+		border-radius: var(--radius-sm);
+		background: color-mix(in srgb, var(--magenta) 8%, var(--bg-elevated));
+		color: var(--ink-muted);
+		font-size: 0.72rem;
+		line-height: 1.4;
+	}
+
+	.lang-switcher__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: grid;
+		gap: 0.25rem;
+	}
+
+	.lang-switcher__link {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0.65rem;
+		padding: 0.55rem 0.65rem;
+		border-radius: var(--radius-sm);
+		text-decoration: none;
+		transition: background 0.15s ease;
+	}
+
+	.lang-switcher__native {
+		font-size: 0.86rem;
+		font-weight: 700;
+		line-height: 1.2;
+	}
+
+	.lang-switcher__badge {
+		flex-shrink: 0;
+		padding: 0.15rem 0.45rem;
+		border-radius: 999px;
+		background: color-mix(in srgb, var(--magenta) 18%, transparent);
+		color: var(--magenta);
+		font-size: 0.62rem;
+		font-weight: 700;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		white-space: nowrap;
+	}
+
+	.lang-switcher__region {
+		display: none;
+	}
+
 	.site-header {
 		position: sticky;
 		top: 0;
