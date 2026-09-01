@@ -133,6 +133,10 @@ const eyebrowByPage: Partial<Record<PageId, string>> = {
 	setup: ui.nav.setup,
 	faq: ui.nav.faq,
 };
+
+/** Features + Store use the main brand hero banner art. */
+const useBrandHero = pageId === 'features' || pageId === 'pricing';
+const heroImage = useBrandHero ? combatMasterImages.hero : crawl.src;
 ---
 
 <PageLayout
@@ -143,7 +147,7 @@ const eyebrowByPage: Partial<Record<PageId, string>> = {
 	intro={intro}
 	introEdit={introEdit}
 	eyebrow={eyebrowByPage[pageId]}
-	heroImage={crawl.src}
+	heroImage={heroImage}
 	heroAlt={page.imageAlt || crawl.caption}
 	gallery={gallery}
 	galleryTitle={galleryTitle}
